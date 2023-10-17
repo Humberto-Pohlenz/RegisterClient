@@ -1,6 +1,6 @@
-print("M2-REC: Humberto")
+print("Register Client")
 
-# Função para validar o email
+# Function to validate email
 def validar_email(email):
     email = email.strip()  # Remover espaços em branco no início e no final do email
     if email.count('@') == 1:  # Verificar se há exatamente uma ocorrência de '@'
@@ -12,7 +12,7 @@ def validar_email(email):
                     return True
     return False
 
-# Função para cadastrar um novo cliente
+# Function to register a new customer
 def cadastrar_cliente():
     nome_completo = input("Digite o nome completo: ")
     while len(nome_completo.split()) < 2 or len(nome_completo.split()[0]) < 3:
